@@ -1,0 +1,34 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars       # Variables files that often contain sensitive data
+*.tfvars.json  # JSON format variable files, also potentially sensitive
+.terraform/    # Terraform cache files and plugins
+crash.log      # Crash logs from Terraform
+override.tf    # Local overrides not meant to be shared
+override.tf.json
+terraform.rc   # Local Terraform CLI configuration file
+
+# Lock files
+.terraform.lock.hcl  # Lock file to prevent version drift, optional to track
+
+# Secrets or sensitive environment files
+.env
+*.env.*
+*.secret
+
+# Provider-specific files
+.terraform.d/
+
+# Docker files
+.dockerignore
+Dockerfile
+docker-compose.yml
+*.env          # Environment variables for Docker setups
+
+# IDE and Editor files
+.vscode/       # VSCode settings folder
+.idea/         # IntelliJ IDEA settings folder
+*.swp          # Swap files for Vim
+*.swo
+*.DS_Store
